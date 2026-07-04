@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RVS Builders | Chennai's Premium Interior & Construction Services</title>
+    <meta
+      name="description"
+      content="RVS Builders offers premium interior design, modular kitchens, wardrobes, renovations, and building works across Chennai."
+    />
+    <meta
+      name="keywords"
+      content="interior designers chennai, modular kitchen chennai, home interiors chennai, building contractors chennai, wardrobe design, RVS Builders"
+    />
+    <meta name="author" content="RVS Builders" />
+    <meta property="og:title" content="RVS Builders | Premium Interior & Construction Chennai" />
+    <meta
+      property="og:description"
+      content="Transform your space with Chennai's trusted interior and construction experts."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: '#D4A853',
+              dark: '#1A1A1A',
+              dark2: '#2C2C2C',
+              orange: '#E8843C',
+              light: '#F5F5F5',
+              textgray: '#A0A0A0',
+            },
+            fontFamily: {
+              heading: ['Playfair Display', 'serif'],
+              body: ['Inter', 'sans-serif'],
+              accent: ['Montserrat', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        color-scheme: dark;
+        --gold: #d4a853;
+        --gold-dark: #b8941f;
+        --dark: #1a1a1a;
+        --dark2: #2c2c2c;
+        --orange: #e8843c;
+        --white: #ffffff;
+        --light: #f5f5f5;
+        --gray: #a0a0a0;
+      }
+      html { scroll-behavior: smooth; }
+      main { scroll-snap-type: y proximity; }
+      section { scroll-snap-align: start; scroll-margin-top: 90px; }
+      body {
+        font-family: 'Inter', sans-serif;
+        background: var(--dark);
+        color: var(--white);
+        overflow-x: hidden;
+      }
+      body.menu-open { overflow: hidden; }
+      ::selection { background: rgba(212,168,83,0.35); color: white; }
+      .glass { backdrop-filter: blur(18px); background: rgba(26,26,26,0.72); }
+      .gold-gradient { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%); }
+      .gold-text { color: var(--gold); }
+      .gold-border { border: 1px solid rgba(212,168,83,0.3); }
+      .section-shell { max-width: 1280px; margin: 0 auto; padding: 0 1.25rem; }
+      .hero-bg { background: radial-gradient(circle at top left, rgba(212,168,83,0.16), transparent 32%), linear-gradient(130deg, #111 0%, #1a1a1a 65%, #0f0f0f 100%); }
+      .parallax-layer { will-change: transform; transform: translate3d(0,0,0); }
+      .section-glow { position: absolute; inset: auto auto -10% -10%; width: 260px; height: 260px; background: radial-gradient(circle, rgba(212,168,83,0.18), transparent 70%); filter: blur(30px); pointer-events: none; }
+      .cursor-ring { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); display: grid; place-items: center; }
+      .cursor-icon { width: 28px; height: 28px; color: var(--gold); display: block; }
+      .cursor-ring .cursor-icon { transition: transform .18s ease, color .18s ease; }
+      .cursor-ring.is-hover .cursor-icon { transform: scale(1.18) rotate(-6deg); color: var(--orange); }
+      .cursor-ring.is-view .cursor-icon { transform: scale(1.45) rotate(0deg); color: #fff; }
+      .cursor-ring.is-hover { width: 56px; height: 56px; border-color: rgba(232,132,60,0.9); background: rgba(232,132,60,0.1); }
+      .cursor-ring.is-view { width: 72px; height: 72px; border-color: #fff; color: white; display: grid; place-items: center; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; }
+      .reveal { opacity: 1; transform: none; transition: opacity .8s ease, transform .8s ease; }
+      .reveal.is-hidden { opacity: 0; transform: translateY(24px) scale(0.98); }
+      button, input, select, textarea, .nav-link, .mobile-link, .faq-toggle, .service-card, .tile-card, .gallery-item, .testimonial-card, .gold-gradient { transition: all .32s ease; }
+      .faq-answer { opacity: 0; max-height: 0; transition: max-height .4s ease, opacity .4s ease, margin .4s ease; }
+      .faq-item.open .faq-answer { opacity: 1; }
+      .tile-card, .service-card, .gallery-item { transform-style: preserve-3d; perspective: 1400px; transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; }
+      .tile-card:hover, .service-card:hover, .gallery-item:hover { box-shadow: 0 28px 70px rgba(0,0,0,.35); transform: translateY(-6px) scale(1.02); border-color: rgba(212,168,83,0.35); }
+      .testimonial-card { transition: transform .4s ease, opacity .4s ease, border-color .4s ease, box-shadow .4s ease; }
+      .testimonial-card.active { transform: scale(1.01); }
+      .magnetic { will-change: transform; }
+      .hero-tilt, .hero-panel { transform-style: preserve-3d; will-change: transform; }
+      .hero-panel::before {
+        content: '';
+        position: absolute;
+        inset: -18px;
+        border-radius: 2rem;
+        background: radial-gradient(circle, rgba(212,168,83,0.28), transparent 70%);
+        filter: blur(22px);
+        transform: translateZ(-18px);
+        z-index: -1;
+      }
+      .hero-orbit {
+        animation: spinSlow 16s linear infinite;
+        transform-style: preserve-3d;
+      }
+      .hero-orbit.alt { animation-direction: reverse; animation-duration: 20s; }
+      @keyframes spinSlow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes floatCard {
+        0%,100% { transform: translateY(0px) rotate(-3deg); }
+        50% { transform: translateY(-10px) rotate(3deg); }
+      }
+      .grid-overlay { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 22px 22px; mask-image: linear-gradient(180deg, rgba(0,0,0,.55), transparent 90%); }
+      .gallery-item img, .service-card img { transition: transform .5s ease; }
+      .gallery-item:hover img, .service-card:hover img { transform: scale(1.06); }
+      .lightbox { background: rgba(0,0,0,0.92); }
+      .testimonial-card.active { border-color: rgba(212,168,83,0.5); }
+      .faq-item.open .faq-answer { max-height: 220px; margin-top: .75rem; }
+      .faq-item.open .faq-icon { transform: rotate(45deg); color: var(--gold); }
+      .timeline-line { position: absolute; left: 50%; top: 60px; bottom: 60px; width: 2px; background: linear-gradient(180deg, rgba(212,168,83,0.2), rgba(212,168,83,0.95)); transform: scaleY(0); transform-origin: top; }
+      .before-after { position: relative; overflow: hidden; }
+      .before-after .after { position: absolute; inset: 0; width: 100%; clip-path: inset(0 0 0 50%); }
+      .before-after input[type="range"] { position: absolute; inset: 0; opacity: 0; cursor: ew-resize; }
+      .before-after .divider { position: absolute; top: 0; bottom: 0; width: 2px; background: white; left: 50%; transform: translateX(-50%); }
+      .mask-reveal { overflow: hidden; }
+      .mask-reveal .inner { transform: translateY(100%); }
+      .hero-canvas { position: absolute; inset: 0; z-index: 0; }
+      @media (max-width: 768px) {
+        .timeline-line { left: 24px; top: 40px; bottom: 24px; }
+        .cursor-ring, .cursor-dot { display: none; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="cursor-ring" aria-hidden="true">
+      <svg class="cursor-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M3 11h18v6a1 1 0 0 1-1 1h-1v1a1 1 0 0 1-1 1h-10a1 1 0 0 1-1-1v-1h-1a1 1 0 0 1-1-1v-6zm2 0v-2a4 4 0 0 1 8 0v2h-8zm10 0v-2a4 4 0 1 1 8 0v2h-8z" fill="currentColor"/>
+      </svg>
+    </div>
+
+    <div id="preloader" class="fixed inset-0 z-[1000] flex items-center justify-center bg-dark">
+      <div class="absolute inset-0 hero-bg"></div>
+      <div class="absolute inset-0 grid-overlay"></div>
+      <div class="relative z-10 text-center px-6">
+        <div class="mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-full border border-gold/30 bg-black/30 shadow-[0_0_50px_rgba(212,168,83,0.18)]">
+          <svg id="logo-svg" viewBox="0 0 120 120" class="h-16 w-16" aria-label="RVS Builders logo">
+            <path d="M24 20h34c16 0 29 13 29 29 0 9-4 17-11 22l17 29h-16l-15-26h-17v26H24V20Zm14 14v30h16c9 0 15-7 15-15s-6-15-15-15H38Z" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="300" stroke-dashoffset="300"/>
+            <path d="M70 72h18c8 0 14 6 14 14s-6 14-14 14H70V72Z" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="200" stroke-dashoffset="200"/>
+            <defs>
+              <linearGradient id="g" x1="12" y1="12" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D4A853" />
+                <stop offset="1" stop-color="#B8941F" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h2 class="font-heading text-3xl sm:text-4xl tracking-[0.3em]">RVS BUILDERS</h2>
+        <p class="mt-3 text-sm uppercase tracking-[0.5em] text-textgray">Building dreams...</p>
+        <div class="mx-auto mt-8 h-1.5 w-56 overflow-hidden rounded-full bg-white/10">
+          <div id="preloader-bar" class="h-full w-0 gold-gradient"></div>
+        </div>
+      </div>
+    </div>
+
+    <header class="fixed top-0 z-50 w-full transition-all duration-300" id="navbar">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#home" class="flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-full border border-gold/30 bg-black/30">
+            <svg viewBox="0 0 120 120" class="h-7 w-7" aria-hidden="true">
+              <path d="M26 24h34c16 0 29 13 29 29 0 9-4 17-11 22l17 29h-16l-15-26h-17v26H26V24Zm14 14v30h16c9 0 15-7 15-15s-6-15-15-15H40Z" fill="none" stroke="#D4A853" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M72 74h18c8 0 14 6 14 14s-6 14-14 14H72V74Z" fill="none" stroke="#D4A853" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <p class="font-heading text-base leading-none">RVS Builders</p>
+            <p class="text-[10px] uppercase tracking-[0.35em] text-textgray">Chennai</p>
+          </div>
+        </a>
+        <div class="hidden items-center gap-8 text-sm lg:flex">
+          <a class="nav-link transition hover:text-gold" href="#home">Home</a>
+          <a class="nav-link transition hover:text-gold" href="#about">About</a>
+          <a class="nav-link transition hover:text-gold" href="#services">Services</a>
+          <a class="nav-link transition hover:text-gold" href="#portfolio">Portfolio</a>
+          <a class="nav-link transition hover:text-gold" href="#testimonials">Testimonials</a>
+          <a class="nav-link transition hover:text-gold" href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="hidden rounded-full border border-gold/40 px-4 py-2 text-sm font-semibold text-gold transition hover:bg-gold hover:text-dark lg:inline-flex">Get Quote</a>
+        <button id="menu-toggle" class="rounded-full border border-gold/30 p-3 lg:hidden" aria-label="Toggle menu">
+          <span class="block h-0.5 w-6 bg-white"></span>
+          <span class="mt-1.5 block h-0.5 w-6 bg-white"></span>
+          <span class="mt-1.5 block h-0.5 w-6 bg-white"></span>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="glass absolute left-4 right-4 top-[90%] rounded-3xl border border-white/10 p-6 shadow-2xl lg:hidden">
+        <div class="flex flex-col gap-4 text-lg">
+          <a class="mobile-link" href="#home">Home</a>
+          <a class="mobile-link" href="#about">About</a>
+          <a class="mobile-link" href="#services">Services</a>
+          <a class="mobile-link" href="#portfolio">Portfolio</a>
+          <a class="mobile-link" href="#testimonials">Testimonials</a>
+          <a class="mobile-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="relative isolate min-h-screen overflow-hidden hero-bg parallax-layer" data-parallax="0.14">
+        <canvas class="hero-canvas" id="hero-canvas"></canvas>
+        <div class="absolute inset-0 grid-overlay"></div>
+        <div class="section-shell relative z-10 flex min-h-screen items-center py-24 lg:py-28">
+          <div class="grid w-full items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+            <div class="hero-tilt max-w-3xl" id="hero-copy">
+              <p class="mb-6 inline-flex rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm font-medium uppercase tracking-[0.3em] text-gold">Luxury interiors • construction • renovation</p>
+              <h1 class="font-heading text-4xl leading-tight sm:text-5xl lg:text-7xl reveal">
+                Chennai's Premium Construction & Interior Works
+              </h1>
+              <p id="hero-subtitle" class="mt-6 max-w-2xl text-lg text-textgray sm:text-xl"></p>
+              <div class="mt-10 flex flex-wrap gap-4">
+                <a href="#contact" class="magnetic rounded-full gold-gradient px-7 py-3 font-semibold text-dark shadow-[0_20px_40px_rgba(212,168,83,0.2)] transition hover:scale-105">Get Free Quote</a>
+                <a href="#portfolio" class="rounded-full border border-white/25 bg-white/5 px-7 py-3 font-semibold text-white transition hover:border-gold hover:text-gold">View Our Work</a>
+              </div>
+              <div class="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <div class="text-2xl font-bold text-gold" data-target="500">0+</div>
+                  <p class="text-sm text-textgray">Happy Customers</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <div class="text-2xl font-bold text-gold" data-target="30">0</div>
+                  <p class="text-sm text-textgray">Days Delivery</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <div class="text-2xl font-bold text-gold" data-target="5">0</div>
+                  <p class="text-sm text-textgray">Years Warranty</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <div class="text-2xl font-bold text-gold" data-target="10">0+</div>
+                  <p class="text-sm text-textgray">Design Experts</p>
+                </div>
+              </div>
+            </div>
+            <div class="hero-panel relative h-[420px] rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-[0_30px_80px_rgba(0,0,0,0.35)] lg:h-[560px]" id="hero-panel">
+              <div class="hero-orbit absolute -left-3 top-10 hidden h-20 w-20 rounded-full border border-gold/30 lg:block"></div>
+              <div class="hero-orbit alt absolute right-6 top-6 hidden h-14 w-14 rounded-full border border-orange/30 lg:block"></div>
+              <div class="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-gold/10 via-transparent to-orange/10"></div>
+              <div class="relative h-full rounded-[1.6rem] border border-white/10 bg-dark/60 p-6">
+                <div class="mb-6 flex items-center justify-between">
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.3em] text-textgray">Featured Project</p>
+                    <h3 class="font-heading text-2xl">Modern Luxury Home</h3>
+                  </div>
+                  <span class="rounded-full bg-gold/15 px-3 py-1 text-sm text-gold">Chennai</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1000&q=80" alt="Elegant modern interior" class="h-64 w-full rounded-2xl object-cover lg:h-[360px]" />
+                <div class="mt-6 flex items-center justify-between">
+                  <div>
+                    <p class="text-textgray">Full interior package</p>
+                    <p class="font-semibold">Modular kitchen • wardrobes • lighting</p>
+                  </div>
+                  <a href="#portfolio" class="text-gold">Explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-gold">↓</div>
+        </div>
+      </section>
+
+      <section id="about" class="relative py-24" data-parallax="0.03">
+        <div class="section-glow"></div>
+        <div class="section-shell">
+          <div class="mb-12 max-w-3xl reveal">
+            <p class="mb-4 text-sm uppercase tracking-[0.35em] text-gold">Why Choose Us</p>
+            <h2 class="font-heading text-3xl sm:text-4xl">Why Choose RVS Builders?</h2>
+            <p class="mt-4 text-lg text-textgray">Chennai's trusted name for home interiors, modular kitchens, renovations, and building works with personal supervision from R Stephen.</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <article class="tile-card rounded-[1.5rem] border border-white/10 bg-dark2/80 p-8 reveal">
+              <div class="mb-6 text-4xl">😊</div>
+              <h3 class="font-heading text-2xl">500+ Happy Customers</h3>
+              <p class="mt-3 text-textgray">Families across Chennai trust us for premium workmanship and transparent execution.</p>
+            </article>
+            <article class="tile-card rounded-[1.5rem] border border-white/10 bg-dark2/80 p-8 reveal">
+              <div class="mb-6 text-4xl">🚀</div>
+              <h3 class="font-heading text-2xl">30 Days* Delivery</h3>
+              <p class="mt-3 text-textgray">Fast turnaround with disciplined site management and timely installation.</p>
+            </article>
+            <article class="tile-card rounded-[1.5rem] border border-white/10 bg-dark2/80 p-8 reveal">
+              <div class="mb-6 text-4xl">🛡️</div>
+              <h3 class="font-heading text-2xl">5 Years Warranty*</h3>
+              <p class="mt-3 text-textgray">Reliable aftercare and quality assurance on select interior and construction services.</p>
+            </article>
+            <article class="tile-card rounded-[1.5rem] border border-white/10 bg-dark2/80 p-8 reveal">
+              <div class="mb-6 text-4xl">🎨</div>
+              <h3 class="font-heading text-2xl">10+ Design Experts</h3>
+              <p class="mt-3 text-textgray">Creativity paired with practical space planning for modern living.</p>
+            </article>
+            <article class="tile-card rounded-[1.5rem] border border-white/10 bg-dark2/80 p-8 reveal">
+              <div class="mb-6 text-4xl">🏙️</div>
+              <h3 class="font-heading text-2xl">Pan Chennai Coverage</h3>
+              <p class="mt-3 text-textgray">We serve homes and commercial spaces across Chennai and nearby neighborhoods.</p>
+            </article>
+            <article class="tile-card rounded-[1.5rem] border border-white/10 bg-dark2/80 p-8 reveal">
+              <div class="mb-6 text-4xl">📐</div>
+              <h3 class="font-heading text-2xl">Custom Designs</h3>
+              <p class="mt-3 text-textgray">Interior plans shaped around your taste, budget, and functional requirements.</p>
+            </article>
+          </div>
+          <div class="mt-10 flex justify-start reveal">
+            <a href="#services" class="inline-flex items-center gap-3 rounded-full border border-gold/30 px-5 py-3 text-sm font-semibold text-gold transition hover:bg-gold hover:text-dark">How We Work <span class="text-lg">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="relative py-24" data-parallax="0.025">
+        <div class="section-glow"></div>
+        <div class="section-shell">
+          <div class="mb-12 max-w-3xl reveal">
+            <p class="mb-4 text-sm uppercase tracking-[0.35em] text-gold">How It Works</p>
+            <h2 class="font-heading text-3xl sm:text-4xl">Simple, transparent, and hassle-free process</h2>
+            <p class="mt-4 text-lg text-textgray">From consultation to handover, every stage stays guided, clear, and supervised.</p>
+          </div>
+          <div class="relative">
+            <div class="timeline-line"></div>
+            <div class="grid gap-6 lg:grid-cols-2">
+              <article class="relative rounded-[1.5rem] border border-white/10 bg-dark2/70 p-8 reveal">
+                <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold/15 text-2xl font-bold text-gold">01</div>
+                <h3 class="font-heading text-2xl">Book Free Consultation</h3>
+                <p class="mt-3 text-textgray">Share your requirements and get a free site visit from our design expert anywhere in Chennai.</p>
+              </article>
+              <article class="relative rounded-[1.5rem] border border-white/10 bg-dark2/70 p-8 reveal">
+                <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold/15 text-2xl font-bold text-gold">02</div>
+                <h3 class="font-heading text-2xl">Design & Finalize</h3>
+                <p class="mt-3 text-textgray">Our team creates a custom design plan, modules, and finish options for your review.</p>
+              </article>
+              <article class="relative rounded-[1.5rem] border border-white/10 bg-dark2/70 p-8 reveal">
+                <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold/15 text-2xl font-bold text-gold">03</div>
+                <h3 class="font-heading text-2xl">Manufacturing & Execution</h3>
+                <p class="mt-3 text-textgray">Work begins with durable materials, skilled carpenters, and close personal supervision.</p>
+              </article>
+              <article class="relative rounded-[1.5rem] border border-white/10 bg-dark2/70 p-8 reveal">
+                <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold/15 text-2xl font-bold text-gold">04</div>
+                <h3 class="font-heading text-2xl">Delivery & Handover</h3>
+                <p class="mt-3 text-textgray">Your site is cleaned, completed on time, and handed over with warranty details.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="relative py-24" data-parallax="0.02">
+        <div class="section-glow"></div>
+        <div class="section-shell">
+          <div class="mb-12 max-w-3xl reveal">
+            <p class="mb-4 text-sm uppercase tracking-[0.35em] text-gold">Services</p>
+            <h2 class="font-heading text-3xl sm:text-4xl">Your one-stop destination for home interiors</h2>
+            <p class="mt-4 text-lg text-textgray">From conceptual design to final handover, every detail is managed under one roof.</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <article class="service-card tile-card overflow-hidden rounded-[1.5rem] border border-white/10 bg-dark2/80 reveal">
+              <img src="https://i.pinimg.com/originals/44/39/d5/4439d5acfc67fc103fdb4e5071c377fe.jpg" alt="Full home interior" class="h-44 w-full object-cover" />
+              <div class="p-6">
+                <h3 class="font-heading text-2xl">Full Home Interior</h3>
+                <p class="mt-3 text-textgray">Complete interior solutions for living, dining, bedrooms, and kitchens.</p>
+                <a href="#contact" class="mt-6 inline-flex text-gold">Learn More →</a>
+              </div>
+            </article>
+            <article class="service-card tile-card overflow-hidden rounded-[1.5rem] border border-white/10 bg-dark2/80 reveal">
+              <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Modular kitchen" class="h-44 w-full object-cover" />
+              <div class="p-6">
+                <h3 class="font-heading text-2xl">Modular Kitchen</h3>
+                <p class="mt-3 text-textgray">Stylish, functional kitchens built for everyday convenience and luxury.</p>
+                <a href="#contact" class="mt-6 inline-flex text-gold">Learn More →</a>
+              </div>
+            </article>
+            <article class="service-card tile-card overflow-hidden rounded-[1.5rem] border border-white/10 bg-dark2/80 reveal">
+              <img src="https://i.pinimg.com/originals/cf/20/15/cf2015966cfcc3b0027bf75f9850b943.jpg" alt="Wardrobes and cupboards" class="h-44 w-full object-cover" />
+              <div class="p-6">
+                <h3 class="font-heading text-2xl">Wardrobes & Cupboards</h3>
+                <p class="mt-3 text-textgray">Custom storage solutions that blend elegance with effortless organization.</p>
+                <a href="#contact" class="mt-6 inline-flex text-gold">Learn More →</a>
+              </div>
+            </article>
+            <article class="service-card tile-card overflow-hidden rounded-[1.5rem] border border-white/10 bg-dark2/80 reveal">
+              <img src="https://i.pinimg.com/736x/af/8c/ef/af8cef86e524e2459038faec8f28734d.jpg" alt="Living room interior" class="h-44 w-full object-cover" />
+              <div class="p-6">
+                <h3 class="font-heading text-2xl">Living Room Design</h3>
+                <p class="mt-3 text-textgray">Warm, well-lit spaces shaped for comfort, hosting, and style.</p>
+                <a href="#contact" class="mt-6 inline-flex text-gold">Learn More →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="relative py-24" data-parallax="0.015">
+        <div class="section-glow"></div>
+        <div class="section-shell">
+          <div class="mb-10 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between reveal">
+            <div class="max-w-3xl">
+              <p class="mb-4 text-sm uppercase tracking-[0.35em] text-gold">Portfolio Gallery</p>
+              <h2 class="font-heading text-3xl sm:text-4xl">Interior designs crafted for modern Chennai living</h2>
+            </div>
+            <div class="rounded-full border border-gold/25 bg-gold/10 px-4 py-2 text-sm text-gold">Luxury • Functional • Timeless</div>
+          </div>
+
+          <div class="space-y-16">
+            <div>
+              <h3 class="mb-6 font-heading text-2xl">Modular Kitchen Designs</h3>
+              <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="https://images.stockcake.com/public/f/0/a/f0a9652d-f99c-4f80-b758-c912017f5158_large/modern-kitchen-interior-stockcake.jpg" data-title="Modern Kitchen" data-caption="L-shaped modular kitchen with premium finish"><img src="https://images.stockcake.com/public/f/0/a/f0a9652d-f99c-4f80-b758-c912017f5158_large/modern-kitchen-interior-stockcake.jpg"           alt="Modern kitchen" class="h-56 w-full object-cover" /></button>
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" data-title="Parallel Kitchen" data-caption="Contemporary storage and elegant countertop"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Parallel kitchen" class="h-56 w-full object-cover" /></button>
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw2xLceO7T2YeosKNC59kRUJWhy_m-GEnPD00ffSAJBYrlsNbmWX70DaJx&s=10" data-title="Luxury Pantry" data-caption="Warm wood tones with marble finishes"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw2xLceO7T2YeosKNC59kRUJWhy_m-GEnPD00ffSAJBYrlsNbmWX70DaJx&s=10" alt="Luxury pantry" class="h-56 w-full object-cover" /></button>
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFpddVooHqXGTOAKaMjOXwQzubw8n065jQhdrjmh8u3CPeYRaDOJ5D1Nbd&s=10" data-title="Minimal Kitchen" data-caption="Clean lines and smart storage"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFpddVooHqXGTOAKaMjOXwQzubw8n065jQhdrjmh8u3CPeYRaDOJ5D1Nbd&s=10" alt="Minimal kitchen" class="h-56 w-full object-cover" /></button>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="mb-6 font-heading text-2xl">Bedroom & Wardrobe Designs</h3>
+              <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="assets/068caadfa1376490f05fe0768c778952.jpg" data-title="Master Bedroom" data-caption="Sleek wardrobe and statement lighting"><img src="assets/068caadfa1376490f05fe0768c778952.jpg" alt="Master bedroom" class="h-56 w-full object-cover" /></button>
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="assets/0d0a3b2a105f0ba58253b1fa9e4aab53.jpg" data-title="Kids Bedroom" data-caption="Playful storage and smart finishes"><img src="assets/0d0a3b2a105f0ba58253b1fa9e4aab53.jpg" alt="Kids bedroom" class="h-56 w-full object-cover" /></button>
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="assets/0f3cf2852d19cfe19b7e8c3806576632.jpg" data-title="Guest Room" data-caption="Compact luxury with premium detailing"><img src="assets/0f3cf2852d19cfe19b7e8c3806576632.jpg" alt="Guest room" class="h-56 w-full object-cover" /></button>
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="https://i.pinimg.com/736x/8c/8b/0d/8c8b0d57e649fb0e242fb38c8064832c.jpg" data-title="Sliding Wardrobes" data-caption="Modern texture and seamless access"><img src="https://i.pinimg.com/736x/8c/8b/0d/8c8b0d57e649fb0e242fb38c8064832c.jpg" alt="Sliding wardrobes" class="h-56 w-full object-cover" /></button>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="mb-6 font-heading text-2xl">Building Alterations & Construction</h3>
+              <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                <div class="reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70">
+                  <div class="before-after">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.FSSCysvcbd1mS0nocmJxWQHaFj?cb=thfvnextfalcon4&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Before renovation" class="h-56 w-full object-cover" />
+                    <div class="after">
+                      <img src="https://tse4.mm.bing.net/th/id/OIP.16-kWpqcj6423I7aMevvIAHaFj?cb=thfvnextfalcon4&rs=1&pid=ImgDetMain&o=7&rm=3" alt="After renovation" class="h-56 w-full object-cover" />
+                    </div>
+                    <div class="divider"></div>
+                    <input type="range" min="0" max="100" value="50" aria-label="Before after slider" />
+                  </div>
+                </div>
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" data-title="Renovation Works" data-caption="Full civil and finish upgrade"><img src="https://tse2.mm.bing.net/th/id/OIP.FSSCysvcbd1mS0nocmJxWQHaFj?cb=thfvnextfalcon4&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Renovation works" class="h-56 w-full object-cover" /></button>
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" data-title="Painting and Finish" data-caption="Refined surfaces and premium color schemes"><img src="https://tse4.mm.bing.net/th/id/OIP.16-kWpqcj6423I7aMevvIAHaFj?cb=thfvnextfalcon4&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Painting" class="h-56 w-full object-cover" /></button>
+                <button class="gallery-item reveal overflow-hidden rounded-[1.2rem] border border-white/10 bg-dark2/70 text-left" data-image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" data-title="Electrical & Plumbing" data-caption="Technical systems done with precision"><img src="https://i.pinimg.com/736x/6a/ae/f7/6aaef715628e3c8f985de2ef0a62df99.jpg" alt="Electrical planning" class="h-56 w-full object-cover" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="relative py-24" data-parallax="0.01">
+        <div class="section-glow"></div>
+        <div class="section-shell">
+          <div class="mb-12 max-w-3xl reveal">
+            <p class="mb-4 text-sm uppercase tracking-[0.35em] text-gold">Testimonials</p>
+            <h2 class="font-heading text-3xl sm:text-4xl">What our customers say</h2>
+            <p class="mt-4 text-lg text-textgray">Trusted by over 500 families across Chennai for their renovation and interior dreams.</p>
+          </div>
+          <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-dark2/80 p-8 lg:p-10">
+            <div id="testimonial-track" class="flex transition-transform duration-500 ease-out">
+              <article class="testimonial-card active min-w-full rounded-[1.5rem] border border-white/10 bg-white/5 p-8">
+                <div class="mb-6 text-4xl text-gold">❝</div>
+                <p class="text-xl text-light">RVS Builders renovated our living room and kitchen. The carpentry work is top-notch and the design is extremely modern. R Stephen's personal supervision ensured everything was completed on time.</p>
+                <div class="mt-6 flex items-center justify-between">
+                  <div>
+                    <p class="font-semibold">Ramesh Kumar</p>
+                    <p class="text-sm text-textgray">Adyar</p>
+                  </div>
+                  <div class="text-gold">★★★★★</div>
+                </div>
+              </article>
+              <article class="testimonial-card min-w-full rounded-[1.5rem] border border-white/10 bg-white/5 p-8">
+                <div class="mb-6 text-4xl text-gold">❝</div>
+                <p class="text-xl text-light">We hired them for full building painting and electrical work. They finished on time and the materials used were of high quality. They clean up the space post-work too. Highly recommended!</p>
+                <div class="mt-6 flex items-center justify-between">
+                  <div>
+                    <p class="font-semibold">Priya Sundar</p>
+                    <p class="text-sm text-textgray">Anna Nagar</p>
+                  </div>
+                  <div class="text-gold">★★★★★</div>
+                </div>
+              </article>
+              <article class="testimonial-card min-w-full rounded-[1.5rem] border border-white/10 bg-white/5 p-8">
+                <div class="mb-6 text-4xl text-gold">❝</div>
+                <p class="text-xl text-light">Fantastic civil renovation work. They handled both materials and labour under R Stephen's direct authority, making it completely hassle-free. The price was very reasonable too.</p>
+                <div class="mt-6 flex items-center justify-between">
+                  <div>
+                    <p class="font-semibold">Karthik Raja</p>
+                    <p class="text-sm text-textgray">Velachery</p>
+                  </div>
+                  <div class="text-gold">★★★★★</div>
+                </div>
+              </article>
+            </div>
+            <div class="mt-8 flex justify-center gap-2" id="testimonial-dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative py-24">
+        <div class="section-shell">
+          <div class="mb-10 max-w-3xl reveal">
+            <p class="mb-4 text-sm uppercase tracking-[0.35em] text-gold">FAQ</p>
+            <h2 class="font-heading text-3xl sm:text-4xl">Frequently asked questions</h2>
+          </div>
+          <div class="space-y-4">
+            <article class="faq-item rounded-[1.2rem] border border-white/10 bg-dark2/70 p-6 reveal">
+              <button class="faq-toggle flex w-full items-center justify-between gap-4 text-left">
+                <span class="text-lg font-semibold">Do you provide both material and labour?</span>
+                <span class="faq-icon text-2xl text-gold transition">+</span>
+              </button>
+              <div class="faq-answer max-h-0 overflow-hidden text-textgray transition-all duration-300">Yes. We execute projects with complete material and labour support, managed under clear accountability.</div>
+            </article>
+            <article class="faq-item rounded-[1.2rem] border border-white/10 bg-dark2/70 p-6 reveal">
+              <button class="faq-toggle flex w-full items-center justify-between gap-4 text-left">
+                <span class="text-lg font-semibold">Is there a charge for site visits and quotes?</span>
+                <span class="faq-icon text-2xl text-gold transition">+</span>
+              </button>
+              <div class="faq-answer max-h-0 overflow-hidden text-textgray transition-all duration-300">No. Site visits and initial quotations are arranged free of charge for genuine project inquiries.</div>
+            </article>
+            <article class="faq-item rounded-[1.2rem] border border-white/10 bg-dark2/70 p-6 reveal">
+              <button class="faq-toggle flex w-full items-center justify-between gap-4 text-left">
+                <span class="text-lg font-semibold">How long does a typical interior project take?</span>
+                <span class="faq-icon text-2xl text-gold transition">+</span>
+              </button>
+              <div class="faq-answer max-h-0 overflow-hidden text-textgray transition-all duration-300">Most interior projects take between 3 and 8 weeks depending on size, scope, and material selection.</div>
+            </article>
+            <article class="faq-item rounded-[1.2rem] border border-white/10 bg-dark2/70 p-6 reveal">
+              <button class="faq-toggle flex w-full items-center justify-between gap-4 text-left">
+                <span class="text-lg font-semibold">What areas in Chennai do you service?</span>
+                <span class="faq-icon text-2xl text-gold transition">+</span>
+              </button>
+              <div class="faq-answer max-h-0 overflow-hidden text-textgray transition-all duration-300">We serve homes and commercial spaces across Chennai, including Anna Nagar, Arumbakkam, Adyar, Velachery, and nearby zones.</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="relative py-24" data-parallax="0.008">
+        <div class="section-glow"></div>
+        <div class="section-shell">
+          <div class="rounded-[2rem] border border-white/10 bg-gradient-to-br from-dark2/90 to-dark/90 p-8 shadow-[0_30px_80px_rgba(0,0,0,0.35)] lg:p-12">
+            <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+              <div class="reveal">
+                <p class="mb-4 text-sm uppercase tracking-[0.35em] text-gold">Contact</p>
+                <h2 class="font-heading text-3xl sm:text-4xl">Ready to transform your space?</h2>
+                <p class="mt-4 max-w-2xl text-lg text-textgray">Get a free site visit and tailored quote from our expert team in Chennai.</p>
+                <form class="mt-8 grid gap-4 sm:grid-cols-2">
+                  <label class="block">
+                    <span class="mb-2 block text-sm text-textgray">Name</span>
+                    <input class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 outline-none ring-0 transition focus:border-gold" type="text" placeholder="Your name" />
+                  </label>
+                  <label class="block">
+                    <span class="mb-2 block text-sm text-textgray">Email</span>
+                    <input class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 outline-none ring-0 transition focus:border-gold" type="email" placeholder="Email address" />
+                  </label>
+                  <label class="block">
+                    <span class="mb-2 block text-sm text-textgray">Phone</span>
+                    <input class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 outline-none ring-0 transition focus:border-gold" type="tel" placeholder="Phone number" />
+                  </label>
+                  <label class="block">
+                    <span class="mb-2 block text-sm text-textgray">Service Type</span>
+                    <select class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 outline-none transition focus:border-gold">
+                      <option>Modular Kitchen</option>
+                      <option>Full Home Interior</option>
+                      <option>Wardrobes</option>
+                      <option>Building Alteration</option>
+                      <option>Commercial Space</option>
+                    </select>
+                  </label>
+                  <label class="sm:col-span-2 block">
+                    <span class="mb-2 block text-sm text-textgray">Message</span>
+                    <textarea class="min-h-[140px] w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 outline-none transition focus:border-gold" placeholder="Tell us about your project"></textarea>
+                  </label>
+                  <div class="sm:col-span-2">
+                    <button class="magnetic rounded-full gold-gradient px-7 py-3 font-semibold text-dark transition hover:scale-105">Get Free Quote</button>
+                  </div>
+                </form>
+              </div>
+              <div class="space-y-6 reveal">
+                <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+                  <h3 class="font-heading text-2xl">Visit us</h3>
+                  <p class="mt-3 text-textgray">#5/11, Kalainar Street, Rani Anna Nagar, Arumbakkam, Chennai-106</p>
+                </div>
+                <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+                  <h3 class="font-heading text-2xl">Contact</h3>
+                  <ul class="mt-3 space-y-2 text-textgray">
+                    <li>Email: rvsinterior28@gmail.com</li>
+                    <li>Mobile: 971043183</li>
+                    <li>Instagram: @rvsinterior28</li>
+                  </ul>
+                </div>
+                <div class="overflow-hidden rounded-[1.5rem] border border-white/10">
+                  <iframe title="RVS Builders location map" src="https://www.google.com/maps?q=Arumbakkam%20Chennai&z=13&output=embed" class="h-64 w-full" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-black/80 py-10">
+      <div class="section-shell grid gap-8 lg:grid-cols-4">
+        <div>
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full border border-gold/30">
+              <svg viewBox="0 0 120 120" class="h-6 w-6" aria-hidden="true">
+                <path d="M26 24h34c16 0 29 13 29 29 0 9-4 17-11 22l17 29h-16l-15-26h-17v26H26V24Zm14 14v30h16c9 0 15-7 15-15s-6-15-15-15H40Z" fill="none" stroke="#D4A853" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M72 74h18c8 0 14 6 14 14s-6 14-14 14H72V74Z" fill="none" stroke="#D4A853" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-heading text-lg">RVS Builders</p>
+              <p class="text-xs uppercase tracking-[0.25em] text-textgray">Premium Interiors</p>
+            </div>
+          </div>
+          <p class="mt-4 text-textgray">Luxury interiors, construction, and renovation solutions tailored for Chennai homes and businesses.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="https://instagram.com/rvsinterior28" class="rounded-full border border-white/10 p-2 text-gold">IG</a>
+            <a href="https://wa.me/91971043183" class="rounded-full border border-white/10 p-2 text-gold">WA</a>
+            <a href="#home" class="rounded-full border border-white/10 p-2 text-gold">FB</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold">Quick Links</h4>
+          <ul class="mt-4 space-y-2 text-textgray">
+            <li><a href="#home" class="hover:text-gold">Home</a></li>
+            <li><a href="#about" class="hover:text-gold">About</a></li>
+            <li><a href="#services" class="hover:text-gold">Services</a></li>
+            <li><a href="#portfolio" class="hover:text-gold">Portfolio</a></li>
+            <li><a href="#contact" class="hover:text-gold">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Services</h4>
+          <ul class="mt-4 space-y-2 text-textgray">
+            <li>Modular Kitchen</li>
+            <li>Wardrobes & Storage</li>
+            <li>Full Interiors</li>
+            <li>Building Works</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Contact</h4>
+          <ul class="mt-4 space-y-2 text-textgray">
+            <li>rvsinterior28@gmail.com</li>
+            <li>971043183</li>
+            <li>Chennai</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-shell mt-8 border-t border-white/10 pt-6 text-center text-sm text-textgray">© 2024 RVS Builders. All rights reserved. Crafted with ❤️ in Chennai</div>
+    </footer>
+
+    <a href="#home" id="backToTop" class="fixed bottom-6 right-6 z-40 hidden rounded-full gold-gradient p-4 text-dark shadow-[0_20px_40px_rgba(212,168,83,0.25)]">↑</a>
+    <a href="https://wa.me/91971043183?text=Hello%20RVS%20Builders%2C%20I%20would%20like%20a%20free%20quote." class="fixed bottom-6 left-6 z-40 rounded-full gold-gradient px-5 py-3 text-sm font-semibold text-dark shadow-[0_20px_40px_rgba(212,168,83,0.25)]">WhatsApp</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script>
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+      const preloader = document.getElementById('preloader');
+      const preloaderBar = document.getElementById('preloader-bar');
+      const logoSvg = document.getElementById('logo-svg');
+      const heroSubtitle = document.getElementById('hero-subtitle');
+      const navbar = document.getElementById('navbar');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuToggle = document.getElementById('menu-toggle');
+      const backToTop = document.getElementById('backToTop');
+      const cursorRing = document.querySelector('.cursor-ring');
+      const cursorIcon = document.querySelector('.cursor-icon');
+      const magneticItems = document.querySelectorAll('.magnetic');
+      const tiltItems = document.querySelectorAll('.tile-card, .service-card, .gallery-item');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      const heroCopy = document.getElementById('hero-copy');
+      const heroPanel = document.getElementById('hero-panel');
+      const faqItems = document.querySelectorAll('.faq-item');
+      const testimonialTrack = document.getElementById('testimonial-track');
+      const testimonialDots = document.getElementById('testimonial-dots');
+      const beforeAfterSliders = document.querySelectorAll('.before-after input[type="range"]');
+
+      const subtitleText = 'All Kinds Of Interior and Building Works Undertaken';
+      let subtitleIndex = 0;
+      const subtitleTimer = setInterval(() => {
+        heroSubtitle.textContent = subtitleText.slice(0, subtitleIndex);
+        subtitleIndex += 1;
+        if (subtitleIndex > subtitleText.length) clearInterval(subtitleTimer);
+      }, 35);
+
+      gsap.registerPlugin(ScrollTrigger);
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-hidden'));
+
+      gsap.to('#logo-svg path', {
+        strokeDashoffset: 0,
+        duration: 2.2,
+        ease: 'power2.inOut',
+        stagger: 0.12,
+      });
+      gsap.to('#preloader-bar', { width: '100%', duration: 2.2, ease: 'power2.inOut' });
+
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          gsap.to(preloader, { opacity: 0, duration: .7, onComplete: () => preloader.remove() });
+        }, 2200);
+      });
+
+      gsap.utils.toArray('.reveal').forEach((el, index) => {
+        gsap.fromTo(
+          el,
+          { y: 36, opacity: 0, scale: 0.98 },
+          {
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            duration: 0.9,
+            delay: index * 0.04,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 88%',
+              once: true,
+            },
+            onComplete: () => el.classList.remove('is-hidden'),
+          }
+        );
+      });
+
+      setTimeout(() => {
+        document.querySelectorAll('.reveal').forEach((el) => {
+          if (!el.classList.contains('is-hidden')) return;
+          el.classList.remove('is-hidden');
+        });
+      }, 1200);
+
+      gsap.to('.hero-bg', { scale: 1.02, duration: 8, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+      gsap.to('.timeline-line', { scaleY: 1, duration: 1.2, ease: 'power2.out', scrollTrigger: { trigger: '#process', start: 'top 75%' } });
+      gsap.timeline({ delay: 2.2 })
+        .from('#hero-copy', { y: 44, opacity: 0, duration: 1, ease: 'power3.out' })
+        .from('#hero-panel', { y: 44, opacity: 0, duration: 1, ease: 'power3.out' }, '-=0.75');
+
+      const parallaxElements = document.querySelectorAll('[data-parallax]');
+      const updateParallax = () => {
+        const scrollY = window.scrollY;
+        parallaxElements.forEach((el) => {
+          const speed = parseFloat(el.dataset.parallax || '0.1');
+          gsap.set(el, { y: scrollY * speed, force3D: true });
+        });
+      };
+      window.addEventListener('scroll', updateParallax, { passive: true });
+      updateParallax();
+
+      document.querySelectorAll('.counter').forEach((counter) => {
+        // no-op; counters rely on data-target in hero section
+      });
+
+      const counters = document.querySelectorAll('[data-target]');
+      const countObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = Number(el.dataset.target);
+          const duration = 1200;
+          const start = performance.now();
+          const from = 0;
+          const tick = (now) => {
+            const p = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = `${Math.round(from + (target - from) * eased)}${target === 500 ? '+' : target === 30 ? '' : target === 5 ? '' : '+'}`;
+            if (p < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+          countObserver.unobserve(el);
+        });
+      }, { threshold: 0.6 });
+      counters.forEach((counter) => countObserver.observe(counter));
+
+      function setActiveNav() {
+        const sections = document.querySelectorAll('main section[id]');
+        let current = 'home';
+        sections.forEach((section) => {
+          const top = section.offsetTop - 140;
+          if (window.scrollY >= top) current = section.id;
+        });
+        document.querySelectorAll('.nav-link, .mobile-link').forEach((link) => {
+          link.classList.toggle('text-gold', link.getAttribute('href') === `#${current}`);
+          link.classList.toggle('font-semibold', link.getAttribute('href') === `#${current}`);
+        });
+      }
+      window.addEventListener('scroll', setActiveNav, { passive: true });
+      setActiveNav();
+
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('py-2', window.scrollY > 20);
+        navbar.classList.toggle('bg-black/70', window.scrollY > 20);
+        navbar.classList.toggle('shadow-xl', window.scrollY > 20);
+        backToTop.classList.toggle('hidden', window.scrollY < 500);
+      });
+
+      menuToggle.addEventListener('click', () => {
+        document.body.classList.toggle('menu-open');
+        mobileMenu.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.mobile-link').forEach((link) => link.addEventListener('click', () => {
+        document.body.classList.remove('menu-open');
+        mobileMenu.classList.add('hidden');
+      }));
+
+      if (!isMobile) {
+        let mx = window.innerWidth / 2;
+        let my = window.innerHeight / 2;
+        let cx = mx;
+        let cy = my;
+        let lastT = performance.now();
+
+        window.addEventListener('mousemove', (e) => {
+          mx = e.clientX;
+          my = e.clientY;
+        });
+
+        const hoverTargets = document.querySelectorAll('a, button, input, select, textarea, .gallery-item, .tile-card, .service-card');
+        hoverTargets.forEach((el) => {
+          el.addEventListener('mouseenter', () => cursorRing.classList.add('is-hover'));
+          el.addEventListener('mouseleave', () => cursorRing.classList.remove('is-hover'));
+        });
+        galleryItems.forEach((item) => {
+          item.addEventListener('mouseenter', () => cursorRing.classList.add('is-view'));
+          item.addEventListener('mouseleave', () => cursorRing.classList.remove('is-view'));
+        });
+
+        // Hide native cursor and run a smooth, slightly floating (antigravity) cursor
+        document.documentElement.style.cursor = 'none';
+
+        function animateCursor(now) {
+          const dt = Math.min(64, now - lastT) / 1000;
+          lastT = now;
+          const ease = 0.12; // smoothing factor
+          cx += (mx - cx) * ease;
+          cy += (my - cy) * ease;
+          const floatY = Math.sin(now / 420) * 6; // vertical float oscillation
+
+            cursorRing.style.left = `${cx}px`;
+            cursorRing.style.top = `${cy + floatY}px`;
+            if (cursorIcon) {
+              cursorIcon.style.left = `${cx}px`;
+              cursorIcon.style.top = `${cy + floatY}px`;
+              cursorIcon.style.transform = 'translate(-50%,-50%)';
+            }
+
+          requestAnimationFrame(animateCursor);
+        }
+        requestAnimationFrame(animateCursor);
+      }
+
+      magneticItems.forEach((item) => {
+        item.addEventListener('mousemove', (e) => {
+          const rect = item.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const moveX = (x / rect.width - 0.5) * 10;
+          const moveY = (y / rect.height - 0.5) * 10;
+          gsap.to(item, { x: moveX, y: moveY, duration: 0.25, ease: 'power2.out' });
+        });
+        item.addEventListener('mouseleave', () => gsap.to(item, { x: 0, y: 0, duration: 0.35, ease: 'power3.out' }));
+      });
+
+      if (heroCopy && heroPanel) {
+        window.addEventListener('pointermove', (event) => {
+          const x = (event.clientX / window.innerWidth - 0.5) * 10;
+          const y = (event.clientY / window.innerHeight - 0.5) * 10;
+          gsap.to(heroCopy, { rotateY: -x * 0.9, rotateX: y * 0.7, duration: 0.6, ease: 'power2.out' });
+          gsap.to(heroPanel, { rotateY: x * 0.8, rotateX: -y * 0.5, duration: 0.6, ease: 'power2.out' });
+        });
+        window.addEventListener('mouseleave', () => {
+          gsap.to(heroCopy, { rotateY: 0, rotateX: 0, duration: 0.6, ease: 'power3.out' });
+          gsap.to(heroPanel, { rotateY: 0, rotateX: 0, duration: 0.6, ease: 'power3.out' });
+        });
+      }
+
+      tiltItems.forEach((card) => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const rotateY = ((x / rect.width) - 0.5) * 16;
+          const rotateX = ((0.5 - (y / rect.height)) * 16);
+          gsap.to(card, { rotateX, rotateY, scale: 1.04, duration: 0.25, ease: 'power2.out' });
+        });
+        card.addEventListener('mouseleave', () => gsap.to(card, { rotateX: 0, rotateY: 0, scale: 1, duration: 0.35, ease: 'power3.out' }));
+      });
+
+      galleryItems.forEach((item) => {
+        item.addEventListener('click', () => {
+          const overlay = document.createElement('div');
+          overlay.className = 'lightbox fixed inset-0 z-[100] flex items-center justify-center p-4';
+          overlay.innerHTML = `
+            <div class="absolute inset-0 bg-black/90"></div>
+            <div class="relative z-10 w-full max-w-4xl rounded-[2rem] border border-white/10 bg-dark2 p-3">
+              <button class="absolute right-3 top-3 z-20 rounded-full border border-white/10 bg-black/50 px-3 py-2 text-white">✕</button>
+              <img src="${item.dataset.image}" alt="${item.dataset.title}" class="max-h-[75vh] w-full rounded-[1.3rem] object-contain" />
+              <div class="p-4 text-center">
+                <h3 class="font-heading text-2xl">${item.dataset.title}</h3>
+                <p class="mt-2 text-textgray">${item.dataset.caption}</p>
+              </div>
+            </div>`;
+          overlay.querySelector('button').addEventListener('click', () => overlay.remove());
+          overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+          document.body.appendChild(overlay);
+        });
+      });
+
+      faqItems.forEach((item) => {
+        item.querySelector('.faq-toggle').addEventListener('click', () => {
+          faqItems.forEach((faq) => {
+            if (faq !== item) faq.classList.remove('open');
+          });
+          item.classList.toggle('open');
+        });
+      });
+
+      const testimonials = Array.from(testimonialTrack.children);
+      const dots = [];
+      testimonials.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.className = 'h-3 w-3 rounded-full border border-gold/40';
+        dot.addEventListener('click', () => showTestimonial(index));
+        testimonialDots.appendChild(dot);
+        dots.push(dot);
+      });
+      let activeTestimonial = 0;
+      function showTestimonial(index) {
+        activeTestimonial = index;
+        gsap.to(testimonialTrack, { xPercent: -100 * index, duration: 0.6, ease: 'power2.out' });
+        dots.forEach((dot, i) => dot.classList.toggle('bg-gold', i === index));
+        testimonials.forEach((card, i) => card.classList.toggle('active', i === index));
+      }
+      setInterval(() => {
+        activeTestimonial = (activeTestimonial + 1) % testimonials.length;
+        showTestimonial(activeTestimonial);
+      }, 5000);
+      showTestimonial(0);
+
+      beforeAfterSliders.forEach((input) => {
+        input.addEventListener('input', (e) => {
+          const container = e.target.parentElement;
+          container.querySelector('.after').style.clipPath = `inset(0 ${100 - e.target.value}% 0 0)`;
+          container.querySelector('.divider').style.left = `${e.target.value}%`;
+        });
+      });
+
+      if (window.THREE) {
+        const canvas = document.getElementById('hero-canvas');
+        const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(55, canvas.clientWidth / canvas.clientHeight, 0.1, 100);
+        camera.position.set(0, 0, 8);
+
+        const ambient = new THREE.AmbientLight(0xffffff, 0.5);
+        scene.add(ambient);
+        const pointLight = new THREE.PointLight(0xd4a853, 2.4, 20);
+        pointLight.position.set(3, 3, 4);
+        scene.add(pointLight);
+
+        const group = new THREE.Group();
+        scene.add(group);
+
+        const materials = [
+          new THREE.MeshStandardMaterial({ color: 0xd4a853, metalness: 0.5, roughness: 0.2 }),
+          new THREE.MeshStandardMaterial({ color: 0xe8843c, metalness: 0.4, roughness: 0.25 }),
+          new THREE.MeshStandardMaterial({ color: 0x2c2c2c, metalness: 0.2, roughness: 0.6 }),
+        ];
+
+        const geometries = [new THREE.BoxGeometry(1.1, 1.1, 1.1), new THREE.CylinderGeometry(0.6, 0.6, 1.1, 6), new THREE.IcosahedronGeometry(0.8, 0)];
+        for (let i = 0; i < 8; i += 1) {
+          const mesh = new THREE.Mesh(geometries[i % geometries.length], materials[i % materials.length]);
+          mesh.position.set((i - 3.5) * 0.9, Math.sin(i * 0.8) * 0.7, Math.cos(i * 0.4) * 1.1);
+          mesh.rotation.set(Math.random() * 1.2, Math.random() * 1.2, Math.random() * 1.2);
+          group.add(mesh);
+        }
+
+        const particles = new THREE.BufferGeometry();
+        const particleCount = 100;
+        const pos = new Float32Array(particleCount * 3);
+        for (let i = 0; i < particleCount; i += 1) {
+          pos[i * 3] = (Math.random() - 0.5) * 12;
+          pos[i * 3 + 1] = (Math.random() - 0.5) * 8;
+          pos[i * 3 + 2] = (Math.random() - 0.5) * 10;
+        }
+        particles.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+        const pMaterial = new THREE.PointsMaterial({ color: 0xd4a853, size: 0.03, transparent: true, opacity: 0.85 });
+        const particleSystem = new THREE.Points(particles, pMaterial);
+        scene.add(particleSystem);
+
+        let targetX = 0;
+        let targetY = 0;
+        window.addEventListener('pointermove', (event) => {
+          targetX = (event.clientX / window.innerWidth - 0.5) * 0.3;
+          targetY = (event.clientY / window.innerHeight - 0.5) * 0.3;
+        });
+
+        function animate() {
+          requestAnimationFrame(animate);
+          group.rotation.y += 0.002;
+          group.rotation.x = THREE.MathUtils.lerp(group.rotation.x, targetY, 0.03);
+          group.rotation.y = THREE.MathUtils.lerp(group.rotation.y, targetX, 0.03);
+          particleSystem.rotation.y += 0.0012;
+          renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener('resize', () => {
+          const width = canvas.clientWidth;
+          const height = canvas.clientHeight;
+          renderer.setSize(width, height);
+          camera.aspect = width / height;
+          camera.updateProjectionMatrix();
+        });
+      }
+    </script>
+  </body>
+</html>
